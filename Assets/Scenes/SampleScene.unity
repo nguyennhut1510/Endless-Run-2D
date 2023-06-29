@@ -607,6 +607,8 @@ MonoBehaviour:
   obstacle1: {fileID: 5158100888644593041, guid: 5bdf6e7cd93fc604d91f9709f1dcecc8, type: 3}
   obstacle2: {fileID: 1321876202976835635, guid: e89fb58dcf612d94381035b235889f12, type: 3}
   obstacle3: {fileID: 1551501652939089889, guid: 161f9073d56fff94d8642b315dafac63, type: 3}
+  obstacle4: {fileID: 4657812536207454501, guid: c6814b811a17c5e46aeead832970e214, type: 3}
+  obstacle5: {fileID: 4642983059637239274, guid: 4f1b5715bc146294bac1b1d3b548e7ec, type: 3}
   obstacleSpawnInterval: 2.5
 --- !u!1 &423318791
 GameObject:
@@ -1533,7 +1535,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 0.9339623, g: 0.83410466, b: 0.83410466, a: 1}
-  m_Intensity: 0
+  m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
   m_ApplyToSortingLayers: 0000000043914133cdc44217b7a4ba02
