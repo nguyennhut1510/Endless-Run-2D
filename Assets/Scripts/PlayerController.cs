@@ -16,6 +16,9 @@ public class PlayerController : MonoBehaviour
     public GameObject GameOverPanel,scoreText;
     public TextMeshProUGUI FinalScoreText, HighScoreText;
     private AudioSource audioSource;
+    public AudioSource gameOverAudioSource;
+    public AudioClip gameOverSound;
+
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +27,9 @@ public class PlayerController : MonoBehaviour
         anim = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
         StartCoroutine("IncreaseGameSpeed");
+
+
+         
     }
 
     // Update is called once per frame
@@ -59,6 +65,10 @@ public class PlayerController : MonoBehaviour
         StopCoroutine("IncreaseGameSpeed");
 
         StartCoroutine("ShowGameOverPanel");
+
+       
+
+        gameOverAudioSource.PlayOneShot(gameOverSound);
     }    
 
     private void OnCollisionEnter2D(Collision2D collision)
