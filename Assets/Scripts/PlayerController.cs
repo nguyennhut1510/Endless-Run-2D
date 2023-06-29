@@ -98,7 +98,7 @@ public class PlayerController : MonoBehaviour
             yield return new WaitForSeconds(10);
             if(runSpeed < 8)
             {
-                runSpeed += 0.2f;
+                runSpeed += 0.4f;
             }    
 
             if(GameObject.Find("GroundSpawer").GetComponent<ObstacleSpawner>().obstacleSpawnInterval > 1)
