@@ -15,12 +15,14 @@ public class PlayerController : MonoBehaviour
     public bool isGameOver = false;
     public GameObject GameOverPanel,scoreText;
     public TextMeshProUGUI FinalScoreText, HighScoreText;
+    private AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
         StartCoroutine("IncreaseGameSpeed");
     }
 
@@ -44,6 +46,7 @@ public class PlayerController : MonoBehaviour
             rb2d.velocity = Vector3.up * 7.5f;
             anim.SetTrigger("jump");
             JumpCount += 1;
+            audioSource.Play();
         }  
 
     }
